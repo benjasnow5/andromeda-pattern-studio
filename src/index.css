@@ -1,0 +1,30 @@
+:root {
+  --surface-bg: #111114;
+  --panel-bg: #1E1E24;
+  --text-primary: #E2E2E9;
+  --text-secondary: #9B9BA5;
+  --border-color: #383742;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: var(--surface-bg);
+  color: var(--text-primary);
+}
+
+.layout-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.canvas-container {
+  flex-grow: 1;
+  position: relative;
+  /* Fondo temporal mientras montamos Three.js */
+  background-image: radial-gradient(var(--border-color) 1px, transparent 0);
+  background-size: 20px 20px;
+}
